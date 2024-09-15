@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contactus.css" />
+    
+  </head>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <section class="home">
+      <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="pngwing.com.png"
+              alt="Logo"
+              width="40"
+              height="30"
+              class="d-inline-block align-text-top"
+            /><b> Ambulance Router </b>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contactus.html">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+              
+              
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-but">
+                <a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#SignupModal" href="#">SignUp</a>
+              </li>
+              <li class="nav-but">
+                <a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#LoginModal" href="#">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="LoginModalLabel">Login to Carpooling</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="login.php">
+          <div class="mb-3">
+            <label for="Login" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="Login" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button  type="submit" class="btn btn-primary" style="background-color: black;">Login</button>
+        </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="SignupModalLabel">Get a Carpooling Account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="signup.php">
+          <div class="mb-3">
+            <label for="SignUp" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="SignUp" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+          </div>
+          <div class="mb-3">
+            <label for="SignUp" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="confirm_password">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button  type="submit" class="btn btn-primary"style="background-color: black;">SignUp</button>
+        </form>
+      </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<video autoplay loop muted plays-inline class="back-video">
+    <source src="4K Ambulance _ Driving _ Emergency Vehicle _ Road _ FREE Stock Video Footage.mp4" type="video/mp4">
+</video>
+<!-- About 4 - Bootstrap Brain Component -->
+<section class="py-3 py-md-5 py-xl-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h3 class="fs-5 mb-2 text-secondary text-uppercase" style="color:white;">About</h3>
+          <h2 class="display-5 mb-4" style="color: aliceblue;">
+            We streamline emergency care by finding the quickest routes to hospitals. Our goal is to make every second count and improve patient outcomes.</h2>
+     
+        </div>
+      </div>
+    </div>
+  
+    <div class="container" style="opacity: 0.9;">
+      <div class="row gy-3 gy-md-4 gy-lg-0">
+        <div class="col-12 col-lg-6">
+          <div class="card bg-light p-3 m-0">
+            <div class="row gy-3 gy-md-0 align-items-md-center">
+              <div class="col-md-5">
+                <img src="https://www.trinetrawireless.com/wp-content/uploads/2017/12/ambulance-tracking-system.webp" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body p-0">
+                  <h2 class="card-title h4 mb-3">Why Choose Us?</h2>
+                  <p class="card-text lead">
+                    We offer the fastest, most reliable ambulance routing to hospitals, ensuring every second counts in emergencies. Our real-time data integration enhances response times and improves patient outcomes.
+
+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card bg-light p-3 m-0">
+            <div class="row gy-3 gy-md-0 align-items-md-center">
+              <div class="col-md-5">
+                <img src="https://media.istockphoto.com/id/1391517615/photo/close-up-on-a-couple-using-the-gps-while-driving-a-car.jpg?s=2048x2048&w=is&k=20&c=EpelS1UpIV3xH5dDaxg5O8Gnb6AXmBTs3ZbQxIBmKvM=" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body p-0">
+                  <h2 class="card-title h4 mb-3">Visionary Team</h2>
+                  <p class="card-text lead">Our team is dedicated to innovation and excellence. With expertise in technology and emergency response, we strive to transform the future of healthcare by delivering efficient, data-driven solutions.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="contactus.js"></script>
+</section>
+  
+
+
+</html>
